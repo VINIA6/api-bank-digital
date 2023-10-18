@@ -1,35 +1,36 @@
-![](https://i.imgur.com/xG74tOh.png)
+# API Banco Digital
 
-# Desafio | Back-end - Módulo 2
+## Contexto 
 
-Você acabou de ser contratado pela melhor empresa de tecnologia do mundo: a **CUBOS**.
-Sua primeira tarefa como desenvolvedor é criar uma API para o banco digital Cubos Bank.  
-Esse será um projeto **piloto**, ou seja, no futuro outras funcionalidades serão implementadas, portanto, dados do banco (nome, agência, etc.) serão imutáveis.
+Acabei de ser contratado por uma empresa de tecnologia.
+Minha primeira tarefa como desenvolvedor é criar uma API para o banco digital Bank. Esse será um projeto **piloto**, ou seja, no futuro outras funcionalidades serão implementadas, portanto, dados do banco (nome, agência, etc.) serão imutáveis.
 
 Seu papel é construir uma RESTful API que permita:
--   Listagem de contas bancárias
--   Criar conta bancária
--   Atualizar os dados do usuário da conta bancária
--   Excluir uma conta bancária
--   Depositar em uma conta bancária
--   Sacar de uma conta bancária
--   Transferir valores entre contas bancárias
--   Consultar saldo da conta bancária
--   Emitir extrato bancário
+-   Listagem de contas bancárias.
+-   Criar conta bancária.
+-   Atualizar os dados do usuário da conta bancária.
+-   Excluir uma conta bancária.
+-   Depositar em uma conta bancária.
+-   Sacar de uma conta bancária.
+-   Transferir valores entre contas bancárias.
+-   Consultar saldo da conta bancária.
+-   Emitir extrato bancário.
 
-**IMPORTANTE: Sempre que a validação de uma requisição falhar, responda com código de erro e mensagem adequada à situação, ok?**
+## Tecnologias
 
-**Exemplo:**
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,express,nodejs,postman" />
+  </a>
+</p>
 
-```javascript
-// Quando é informado um número de conta que não existe:
-// HTTP Status 404
-{
-    "mensagem": "Conta não encontrada"
-}
-```
+## Start Projeto
 
----
+Preencha a checklist para fazer run backend:
+
+-   [ ] Executar `git clone` no terminal para clonar o repositório, ou clonar de outra maneira (preferência SSH).
+-   [ ] Dentro da pasta que foi clonado deve utilizar o seguinte comando `npm i` ou `npm install` para fazer o download das dependências.
+-   [ ] Após realizar o processo anterior `npm start` para inicializar o backend.
 
 ## **Persistências dos dados**
 
@@ -40,10 +41,10 @@ Os dados serão persistidos em memória, no objeto existente dentro do arquivo `
 ```javascript
 {
     banco: {
-        nome: "Cubos Bank",
+        nome: "Bank",
         numero: "123",
         agencia: "0001",
-        senha: "Cubos123Bank",
+        senha: "123Bank",
     },
     contas: [
         // array de contas bancárias
@@ -687,16 +688,3 @@ Essa é a rota que será utilizada para  listar as transações realizadas de um
     mensagem: 'Mensagem do erro!'
 }
 ```
-
-## Aulas úteis:
-
--   [Rotas, Intermediários e Controladores](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/ac35fd79-d5b9-4aae-8582-4579286ce15f)
--   [Aula API REST](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/ecb7d0dc-9b7d-4a29-bf47-df73c1eb726f)
--   [Formatando datas com date-fns](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/b9b9e316-1362-4cc0-ba7a-d91a82b7d105)
--   [Aula objetos](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/f7f7cdf2-823d-4bc9-aa17-2413a4e120f0)
--   [Aula funções](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/94475475-4560-4612-b74e-aba9d3a0ad12)
--   [Aula de Revisão](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/048a88a1-0785-4c08-a984-b5b5382ea38f)
-
-**LEMBRE-SE**: é melhor feito do que perfeito!!!
-
-###### tags: `back-end` `módulo 2` `nodeJS` `API REST` `desafio`
